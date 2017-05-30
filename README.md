@@ -1,2 +1,5 @@
-# Alternate API Evangelist
-This is my alternate universe for API Evangelist, visit http://alternate.apievangelist.com/ for the stories.
+#Alternate API Evangelist
+
+This is my fictional writing about the API space.
+
+Visit http://alternatei.apievangelist.com
