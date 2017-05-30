@@ -5,45 +5,45 @@ title: Alternate API Evangelist
 <section>
 	<div class="content">
 
-	<h3>Alternate API Evangelist</h3>
-  <p><img src="https://s3.amazonaws.com/kinlane-productions/matrix-pics/chief-american-horse-sioux-matrix.png" width="25%" align="right" /></p>
-  <p>While immersed in a world of tech, reading and writing about real-world issues, I needed an outlet, somewhere I could publish my fictional thoughts and stories. I find it easier to get back to the every day grind of tech blogging, if I have a place to produce fictional work. So I created an alternate reality where I can blog about the weird stuff I think  about each day.</p>
-	<p>In a fake news world it was difficult for me to continue writing on my alternate blogs, but I am beginning to find my way forward, and crave the release that fictional writing brings. I find esign fiction endlessly valuable when it comes to understanding APIs, AI, ML, and the other digital worlds that are merging. </p>
-  <p>Nothing you read at <a href="http://alternate.apievangelist.com">alternate.apievangelist.com</a> or my other site <a href="http://alternate.kinlane.com">alternate.kinlane.com</a> is real, if you are looking for my non-fiction work visit <a href="http://kinlane.com/">Kin Lane</a> or <a href="http://apievangelist.com/">API Evangelist</a>. </p>
-	<center><hr style="width: 75%;" /></center>
-	{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-  {% for post in paginator.posts %}
-	 	{% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-    {% if post.title != null %}
-			{% if posttime < nowunix %}
-        <h3><a href="{{ site.production_url }}{{ post.url }}">{{ post.title }}</a></h3>
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-        {{ post.content }}
-        <ul class="actions" style="text-align: center;">
-          <li><a href="{{ site.production_url }}{{ post.url }}" class="button big">Details</a></li>
-        </ul>
-      	<center><hr style="width: 75%;" /></center>
-				{% endif %}
-    {% endif %}
-  {% endfor %}
+		<h3>Alternate API Evangelist</h3>
+	  <p><img src="https://s3.amazonaws.com/kinlane-productions/matrix-pics/chief-american-horse-sioux-matrix.png" width="10%" align="right" /></p>
+	  <p>While immersed in a world of tech, reading and writing about real-world issues, I needed an outlet, somewhere I could publish my fictional thoughts and stories. I find it easier to get back to the every day grind of tech blogging, if I have a place to produce fictional work. So I created an alternate reality where I can blog about the weird stuff I think  about each day.</p>
+		<p>In a fake news world it was difficult for me to continue writing on my alternate blogs, but I am beginning to find my way forward, and crave the release that fictional writing brings. I find esign fiction endlessly valuable when it comes to understanding APIs, AI, ML, and the other digital worlds that are merging. </p>
+	  <p>Nothing you read at <a href="http://alternate.apievangelist.com">alternate.apievangelist.com</a> or my other site <a href="http://alternate.kinlane.com">alternate.kinlane.com</a> is real, if you are looking for my non-fiction work visit <a href="http://kinlane.com/">Kin Lane</a> or <a href="http://apievangelist.com/">API Evangelist</a>. </p>
+		<center><hr style="width: 75%;" /></center>
+		{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+	  {% for post in paginator.posts %}
+		 	{% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+	    {% if post.title != null %}
+				{% if posttime < nowunix %}
+	        <h3><a href="{{ site.production_url }}{{ post.url }}">{{ post.title }}</a></h3>
+	        <span class="post-date">{{ post.date | date_to_string }}</span>
+	        {{ post.content }}
+	        <ul class="actions" style="text-align: center;">
+	          <li><a href="{{ site.production_url }}{{ post.url }}" class="button big">Details</a></li>
+	        </ul>
+	      	<center><hr style="width: 75%;" /></center>
+					{% endif %}
+	    {% endif %}
+	  {% endfor %}
 
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a href="/blog/page{{paginator.next_page}}" class="older">Older</a>
-    {% else %}
-      <span class="next">Older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a href="/" class="newer">Newer</a>
-      {% else %}
-        <a href="/blog/page{{paginator.previous_page}}" class="newer">Newer</a>
-      {% endif %}
-    {% else %}
-      <span class="previous">Newer</span>
-    {% endif %}
-  </div>
+	  <!-- Pagination links -->
+	  <div class="pagination">
+	    {% if paginator.next_page %}
+	      <a href="/blog/page{{paginator.next_page}}" class="older">Older</a>
+	    {% else %}
+	      <span class="next">Older</span>
+	    {% endif %}
+	    {% if paginator.previous_page %}
+	      {% if paginator.page == 2 %}
+	        <a href="/" class="newer">Newer</a>
+	      {% else %}
+	        <a href="/blog/page{{paginator.previous_page}}" class="newer">Newer</a>
+	      {% endif %}
+	    {% else %}
+	      <span class="previous">Newer</span>
+	    {% endif %}
+	  </div>
 
   </div>
 </section>
