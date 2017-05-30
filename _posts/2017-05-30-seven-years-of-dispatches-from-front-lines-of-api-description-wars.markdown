@@ -1,6 +1,6 @@
 ---
 title: Seven Years Of Dispatches From Front Lines Of The API Description Wars
-date: 2017-05-30 13:00:00 Z
+date: 2017-05-30 12:00:00 Z
 tags:
 - Alternate API Evangelist
 image: https://s3.amazonaws.com/kinlane-productions/algorotoscope/cyber-api-description-wars/api-specification-wars.png
