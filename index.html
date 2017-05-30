@@ -27,34 +27,10 @@ title: Alternate API Evangelist
 	    {% endif %}
 	  {% endfor %}
 
-	  <!-- Pagination links -->
-	  <div class="pagination">
-	    {% if paginator.next_page %}
-	      <a href="/blog/page{{paginator.next_page}}" class="older">Older</a>
-	    {% else %}
-	      <span class="next">Older</span>
-	    {% endif %}
-	    {% if paginator.previous_page %}
-	      {% if paginator.page == 2 %}
-	        <a href="/" class="newer">Newer</a>
-	      {% else %}
-	        <a href="/blog/page{{paginator.previous_page}}" class="newer">Newer</a>
-	      {% endif %}
-	    {% else %}
-	      <span class="previous">Newer</span>
-	    {% endif %}
-	  </div>
-
-		<ul class="pagination">
-			<li><a href="/blog/page{{paginator.next_page}}" class="button disabled">Prev</a></li>
-			<li></li>
-			<li></li>
-			<li></li>
+		<ul class="pagination" style="width: 100%;">
+			<li style="text-align:left;"><a href="/blog/page{{paginator.next_page}}" class="button disabled">Prev</a></li>
 			<li><span>&hellip;</span></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li><a href="/blog/page{{paginator.previous_page}}" class="button">Next</a></li>
+			<li style="text-align:right;"><a href="/blog/page{{paginator.previous_page}}" class="button">Next</a></li>
 		</ul>
 
   </div>
